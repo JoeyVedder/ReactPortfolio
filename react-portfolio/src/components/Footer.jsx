@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Footer() {
-    returm (
+    return (
     <footer className="footer">
         <p>You can connect with me on:</p>
         <ul>
