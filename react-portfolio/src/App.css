@@ -1,42 +1,65 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+.header {
+  background-color: #2C3E50;
+  color: #fff;
+  padding: 10px;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.header nav ul li a {
+  color: teal;
+  text-decoration: none;
+  padding: 5px 0; 
+  transition: text-shadow 0.3s ease;  /* transitions to the glow */
+}
+
+.header nav ul li a:hover {
+  text-decoration: underline;  
+  text-shadow: 0 0 15px teal, 0 0 15px red;  /* Circular glow effect when hovering */
+}
+
+.header nav ul li a.active {
+  text-shadow: 0 0 25px #00FFCC, 0 0 25px #FF0000;  /* Brighter circular glow effect for active links */
+}
+
+.footer {
+  background-color: #2C3E50;
+  color: #fff;
+  padding: 10px;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.footer a {
+  color: teal;
+  text-decoration: none;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.footer a:hover {
+  text-decoration: underline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.about-me img {
+  width: 150px;
+  border-radius: 50%;
 }
 
-.card {
-  padding: 2em;
+.contact form {
+  display: flex;
+  flex-direction: column;
 }
 
-.read-the-docs {
-  color: #888;
+.contact input, .contact textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.contact button {
+  padding: 10px;
+  background-color: #2C3E50;
+  color: white;
+  border: none;
 }
