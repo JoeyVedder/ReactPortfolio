@@ -11,7 +11,7 @@
 }
 
 .header nav ul li a {
-  color: teal;
+  color: chartreuse;
   text-decoration: none;
   padding: 5px 0; 
   transition: text-shadow 0.3s ease;  /* transitions to the glow */
@@ -19,11 +19,11 @@
 
 .header nav ul li a:hover {
   text-decoration: underline;  
-  text-shadow: 0 0 15px teal, 0 0 15px red;  /* Circular glow effect when hovering */
+  text-shadow: 0 0 15px teal, 0 0 15px white;  /* Circular glow effect when hovering */
 }
 
 .header nav ul li a.active {
-  text-shadow: 0 0 25px #00FFCC, 0 0 25px #FF0000;  /* Brighter circular glow effect for active links */
+  text-shadow: 0 0 25px #7df6dc, 0 0 25px white;  /* Brighter circular glow effect for active links */
 }
 
 .footer {
@@ -34,7 +34,7 @@
 }
 
 .footer a {
-  color: teal;
+  color: chartreuse;
   text-decoration: none;
 }
 
@@ -62,4 +62,9 @@
   background-color: #2C3E50;
   color: white;
   border: none;
+}
+
+.project a {
+  display: block; /* Makes each link appear on a new line */
+  margin: 5px 0;  /* Adds space between the links */
 }
