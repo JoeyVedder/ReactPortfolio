@@ -58,8 +58,13 @@ header h1 {
 /* About Me Section */
 .about-me {
   display: flex;
+<<<<<<< HEAD
   align-items: center; 
   justify-content: space-around; 
+=======
+  align-items: center;
+  justify-content: space-around;
+>>>>>>> 541dc28bc2cfddf58066db4bd9bb5470154a5f87
   padding: 40px;
   margin: 20px auto;
   background: rgba(255, 255, 255, 0.1);
@@ -159,6 +164,21 @@ header h1 {
   text-shadow: 0 0 10px chartreuse;
 }
 
+/* Resume Section Link */
+.resume-link {
+  color: lightgreen; /* Light coral for the "Download Resume" link */
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.resume-link:hover {
+  color: #FFD700; /* Gold on hover */
+  text-shadow: 0 0 10px #FFD700; /* Soft glow effect on hover */
+}
+
+
+
 /* Footer */
 .footer {
   margin-top: auto; 
@@ -182,4 +202,29 @@ header h1 {
   max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 768px) {
+  .about-me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me img {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .header nav ul {
+    flex-direction: column;
+  }
+
+  .contact form {
+    max-width: 100%;
+  }
+
+  .project {
+    padding: 10px;
+  }
 }
